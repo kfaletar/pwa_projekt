@@ -13,15 +13,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     </head>';
 
-   
-    if(strlen($_SESSION['$username']>0)){
-        $uspjesnaPrijava=TRUE;
-        if($_SESSION['$razina']===1){
-            $admin=TRUE;
-        }else $admin=FALSE;
-    }else{
-        $uspjesnaPrijava = FALSE;
-        $admin = FALSE; 
+    if(isset($_SESSION['$username'])){
+        if(strlen($_SESSION['$username']>0)){
+            $uspjesnaPrijava=TRUE;
+            if($_SESSION['$razina']===1){
+                $admin=TRUE;
+            }else $admin=FALSE;
+        }else{
+            $uspjesnaPrijava = FALSE;
+            $admin = FALSE; 
+        }
     }
 
     $uspjesnaPrijava = FALSE;

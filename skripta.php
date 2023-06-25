@@ -23,15 +23,17 @@
                 }else{
                     $arhivirati=0;
                 }
+
+                $stmt = $dbc->prepare("INSERT INTO clanak (naslov, sazetak, sadrzaj, kategorija,slika, arhivirati ) 
+                            VALUES (?,?, ?, ?,?, ?)");
+                $stmt->bind_param("sssssi", $naslov, $sazetak, $sadrzaj,$kategorija,$slika,$arhivirati );
+                
+                
+                $stmt->execute();
             
 
 
-                $query = "INSERT INTO clanak (naslov, sazetak, sadrzaj, kategorija,
-                slika, arhivirati ) VALUES ('$naslov', '$sazetak', '$sadrzaj', 
-                '$kategorija','$slika', '$arhivirati')";
-
-                $result = mysqli_query($dbc, $query) or die('Error querying databese.');
-                mysqli_close($dbc);
+               
             }
         }
     
