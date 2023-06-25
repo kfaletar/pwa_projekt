@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+    <header class="header">
+        <h1 class="naslov">Newsweek</h1>
+        <h3 class="date">datum</h3>
+        <br>
+        <div class="navdiv">
+            <nav class="navbar">
+                <a class="navLinks" href="index.php">
+                    <div>Home</div>
+                </a>
+                <a class="navLinks" href="index.php#usArticles">
+                    <div class="divclass">U.S.</div>
+                </a>
+                <a class="navLinks" href="index.php#worldArticles">
+                    <div class="divclass">World</div>
+                </a>
+                <a class="navLinks" href="#">
+                    <div class="divclass">Administracija</div>
+                </a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="content">
+        
+        
+        <section  class="formSection">
+            <form name="unosClanka" action="skripta.php" method="POST" enctype="multipart/form-data">
+                <div name="formdiv" id="formdiv">
+                    
+                    <label name="formlabel">Naslov</label><br>
+                    <input type="text" name="naslov" id="naslov"><br>
+                </div>
+
+
+                <div name="formdiv" id="formdiv">
+                <label>Sažetak</label><br>
+                <textarea name="sazetak" id="satezak" cols="20" rows="4"></textarea><br>
+                <br>
+                </div>
+
+                <div name="formdiv" id="formdiv">
+                    <label>Sadržaj</label><br>
+                    <textarea name="sadrzaj" id="sadrzaj" cols="20" rows="4"></textarea><br>
+                    <br>
+                </div>  
+
+                <div name="formdiv" id="formdiv"></div>
+                    <label>Kategorija: </label><br>
+                    <select name="kategorija" id="kategorija">
+                        <option selected="selected" value="US">U.S.</option>
+                        <option value="World">World</option>
+                    </select><br>
+                    <br>
+                </div>  
+
+                <div name="formdiv" id="formdiv"></div>
+                    <label>Slika:</label><br>
+                    <div class="">
+                        <input type="file" name="slika" id="slika">
+                        <span id="slikaPor"></span>
+                    </div><br>
+                    <br>
+                </div>  
+
+                <div name="formdiv" id="formdiv"></div>
+                    <label>Arhivirati:</label><br>
+                    <div class="">
+                        <input type="checkbox" name="arhivirati" id="arhivirati">
+                    </div>
+                </div>  
+
+                <input type="submit" name="submit" id="submit">
+            </form>
+        </section>
+
+        
+
+        <footer>
+            <hr>
+            <h5>2019 NEWSWEEK</h5>
+        </footer>
+    
+    
+</body>
+</html>

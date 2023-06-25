@@ -1,0 +1,132 @@
+
+body{
+    margin-top: 0px;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+
+}
+.content{
+    width: 90%;
+    margin: auto;
+}
+.header{
+    background: red;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+.naslov{
+    margin-top: 0px;
+    text-align: center;
+}
+.date{
+    display: flex;
+    padding-left: 37px;
+    font-size: 20px;
+}
+nav{
+    background-color: #f1f1f1;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center align the navigation items */
+
+
+}
+nav div {
+        
+        margin-right: 10px; /* Optional: Add some space between the navigation items */
+}
+
+.header, nav {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.navLinks{
+    width: 25%;
+    font-size: 20px;
+}
+.navdiv{
+    background-color: white;
+}
+.articles {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap to a new row */
+    justify-content: center;
+    
+  }
+.articlesSection{
+    width: 100%;
+    width: 90%;
+    margin: auto;
+}
+.articlesTitle{
+    display: flex;
+}
+footer{
+    text-align: left;
+}
+.sectionBanner{
+    background: red;
+    color: white;
+    display: flex;
+    width: fit-content;
+    block-size: fit-content;
+    padding: 10px;
+    margin-left: 39px;
+}
+.articlePage{
+    width: 90%;
+    margin: auto;
+}
+.pageContent{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.formdiv{
+    display: flex;
+    
+}
+.formlabel{
+    display: flex;
+}
+
+.formSection {
+    width: 250px; /* Adjust the width as needed */
+    margin: 0 auto;
+    text-align: left;
+  }
+  .imgs{
+    width: 100%;
+  }
+  .articlediv {
+    width: 350px; /* Adjust the width of the articlediv based on your needs */
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px;
+
+    border-radius: 12px;
+
+  }
+.formFancy{
+    border-radius: 25px;
+
+    width: fit-content;
+    margin: auto;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+
+
